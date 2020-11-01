@@ -127,7 +127,7 @@ class MessageController extends Controller
             try {
 
                 $inserted_count = 0;
-                echo $item_type = $mesaj['item_type'];
+                $item_type = $mesaj['item_type'];
                 if ($item_type == 'profile') {
                     $profile_id = $mesaj['profile']['pk'];
                     $result = Insta::follow($profile_id); // $ig->people->follow($profile_id);
@@ -194,7 +194,7 @@ class MessageController extends Controller
                     }
 
                     $response['thread_' . $key] = $mid;
-                    echo $json = Insta::hideThread($mid); //$ig->direct->hideThread($mid); //Tüm konuşmayı siler
+                    $json = Insta::hideThread($mid); //$ig->direct->hideThread($mid); //Tüm konuşmayı siler
                 }
             } catch (\Throwable $th) {
                 // die($th);
