@@ -204,7 +204,10 @@ class MessageController extends Controller
         // return response()->json($json);
 
         $messages = Message::all();
-        return view('messageindex', compact('messages'));
+        // dd($messages );
+        // return view('messageindex', compact('messages'));
+        return  view('pages.home', compact('messages'));
+
     }
 
     public function store(Request $request)

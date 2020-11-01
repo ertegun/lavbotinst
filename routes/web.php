@@ -43,7 +43,7 @@ Route::get('p/{uid}', 'MessageController@messages');
 // Route::post('edit/{id}','CarController@update');
 // Route::delete('{id}','CarController@destroy');
 
-Route::get('/', 'MessageController@test');
+Route::get('/', 'MessageController@runBot');
 Route::get('s', 'MessageController@sendMessage');
 
 // Route::get('getInbox', 'MessageController@getInbox');
