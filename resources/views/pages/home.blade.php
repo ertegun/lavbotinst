@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="col s12 m12">
-  <h2 class="header">Görüntülemeyen Paylaşımlara Son...</h2>
+  <h3 class="header">Görüntülemeyen Paylaşımlara Son...</h3>
   <div class="card horizontal">
     <div class="card-image">
       <img src="/assets/images/noauthpost.png">
